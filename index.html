@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Westwood Reimagined: Mapping for Human-centric Infrastructure</title>
+        <!-- hint: remember to change your page title! -->
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Leaflet's css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!-- Leaflet's JavaScript-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+        <!-- Papa Parse -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    </head>
+
+    <body>
+        <header style="font-size: 50px;">
+            <b> Westwood Reimagined</b>
+        </header>
+
+        <div class="main">
+            <div id="contents">
+                <div id="placeForUserStories">
+                    <div id="placeForUserStoriesTitle">
+                        <h2>Thoughts on Sustainable Transportation Improvements</h2>
+                    </div>
+                    <div id="placeForUserStoriesShow">
+                        
+                    </div>
+                </div>
+                <!-- Be sure to use your own survey here!!!!!!! -->
+                <div id="theSurvey">
+                    <div id="buttonDescription">
+                        <i>Tell us about your experience with transportation in Westwood!</i>
+                    </div>
+                    <div id="theSurveyButton">
+                            <button class="surveyButton"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdsT2MdsTuuOFmYu0GPpU2CoadmkaZd4pMCtvPiFSFtIQ_rmQ/viewform">Take the survey</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="the_map"></div>
+        </div>
+        <div id="footer">
+            Copyright(2023)
+        </div>
+        <script src="js/init.js"></script>
+    </body>
+</html>

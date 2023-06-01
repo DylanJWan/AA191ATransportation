@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: "Poppins";
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main_content" "footer";
+    background-color: #D3EFC6;
+    gap: 20px;
+}
+
+header{
+    padding: 10px;
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+.main{
+    grid-area: main_content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main_map content";
+    display: grid;
+}
+
+#contents{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 3fr 1fr; 
+    grid-template-areas: "userStories" "survey"
+}
+
+#the_map{
+    height:80vh;
+    margin-left: 20px;
+    grid-area: main_map;
+}
+
+#theSurvey{
+    grid-area: survey;
+    grid-template-areas: "buttonDescription surveyButton";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttonDescription{
+    grid-area: buttonDescription;
+    text-align: right;
+    padding: 20px 0;
+    margin: 20px;
+}
+
+#theSurveyButton{
+    grid-area: surveyButton;
+    padding: 20px 0;
+    margin: 20px;
+}
+
+.surveyButton{
+    background-color: #8cda67;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.surveyButton:hover{
+    color: rgb(255, 253, 238);
+    background-color: #50b422;
+    transition: background-color .25s;  
+}
+
+.surveyButton a{
+    text-decoration: none;
+    color: black;
+}
+
+#placeForUserStories{
+    grid-area: userStories;
+    grid-template-areas: "userStoriesTitle" "userStoriesShow";
+    grid-template-rows: 0.25fr 400px;
+    display:grid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#placeForUserStoriesTitle{
+    grid-area: userStoriesTitle;
+    text-align: center;
+    background-color: gray;
+    align-self: center;
+    padding: 10px;
+}
+
+#placeForUserStoriesShow{
+    grid-area: userStoriesShow;
+    overflow-y: scroll;
+}
+
+.userStories{
+    color: black;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.legend {
+    border-radius: 5px;
+    padding: 6px 8px;
+    background: white;
+    background: rgba(221, 221, 221, 0.8);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+    /*border-radius: 5px;*/
+    line-height: 24px;
+    color: #555;
+  }
+  .legend h4 {
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 12px 8px;
+    color: #393939;
+  }
+  
+  .legend span {
+    position: relative;
+    bottom: 3px;
+  }
+  
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 8px 0 0;
+    opacity: 0.7;
+  }
+  
+  .legend i.icon {
+    background-size: 18px;
+    background-color: rgba(255, 255, 255, 1);
+  }
