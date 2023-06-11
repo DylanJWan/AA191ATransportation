@@ -13,41 +13,111 @@
         <!-- Leaflet's JavaScript-->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
+        <!-- Leaflet Sidebar CSS -->
+        <link rel="stylesheet" href="styles/leaflet-sidebar.css">
+        <link rel="stylesheet" href="styles/leaflet-sidebar.min.css">
+
+        <!-- Leaflet Sidebar JS -->
+        <script src="js/libs/leaflet-sidebar.js"></script>
+        <script src="js/libs/leaflet-sidebar.min.js"></script>
+
         <!-- Papa Parse -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+        <!-- Adding the TurfJs library  -->
+        <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
+
+        <!-- Adding ChartJS  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
     </head>
 
     <body>
-        <header style="font-size: 50px;">
-            <b> Westwood Reimagined</b>
+        <header>
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src = "images/shiba.jpg" style="height:50px; width:50px; margin-right:10px;">
+                    <b>WESTWOOD REIMAGINED </b>
+                </div>
+            
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mailto: westwoodreimagined@gmail.com">Contact Us</a></li>
+                    </div>
+                </ul>
+            </nav>
         </header>
 
-        <div class="main">
-            <div id="contents">
-                <div id="placeForUserStories">
-                    <div id="placeForUserStoriesTitle">
-                        <h2>Thoughts on Sustainable Transportation Improvements</h2>
-                    </div>
-                    <div id="placeForUserStoriesShow">
-                        
-                    </div>
-                </div>
-                <!-- Be sure to use your own survey here!!!!!!! -->
-                <div id="theSurvey">
-                    <div id="buttonDescription">
-                        <i>Tell us about your experience with transportation in Westwood!</i>
-                    </div>
-                    <div id="theSurveyButton">
-                            <button class="surveyButton"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdsT2MdsTuuOFmYu0GPpU2CoadmkaZd4pMCtvPiFSFtIQ_rmQ/viewform">Take the survey</a></button>
-                    </div>
-                </div>
+            <!-- Trigger/Open The Modal -->
 
+            <!-- The Modal -->
+            <div id="myModal" class="modal2">
+
+                <!-- Modal content -->
+                <div class="modal-content2">
+                    
+                    <span class="close">&times;</span>
+                    <center><h1 style="font-size: 36px;">Welcome to <span style="font-weight: bold; color: #49AD2D">Westwood Reimagined!</span></h1></center>
+                    <center><h2> For many, visiting Westwood Village is an important part of many people's lives. Unfortunately, the current transportation infrastructure is hostile towards those who do not own cars. </h2></center>
+                    <p style="font-size: 16px;"> To recenter the travel experience away from cars, local transportation organizations like our collaborator, <a href="https://www.westwoodconnected.com/" style="color:#49AD2D">Westwood Connected</a>, have been campagining for more sustainable transportation in Westwood Village.</br></br>
+                        Our wish is to provide the Westwood community members an open space to share their experiences on visiting Westwood Village, specifically whether they support sustainable transportation alternatives.</br></br>
+                        We hope these stories will foster a sense of community and comfort as Westwood community members try to navigate past the current transportation boundaries and towards a more humanistic experience in visiting Westwood. 
+                        </br></br></br>
+                        <span style="font-weight: bold; color: #49AD2D">Click on a zipcode</span>
+                        to see how Westwood Community members feel about sustainable transportation in Westwood Village.</br>
+                    </p>
+                        
+                </div>
             </div>
-            <div id="the_map"></div>
+
+        <div class="main">
+            <div class="introduction">
+                <b>Support of Sustainable Transportation Alternatives by Westwood Community Members</b>
+            </div>
+            <div id="the_map">
+                <div id="sidebar" class="leaflet-sidebar collapsed"></div>
+                <div id="legend">
+                    <div>
+                        <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='#C57601' /></svg> 75%-100% Support 
+                    </div>
+                    <div>
+                        <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='#FF9A00' /></svg> 50%-75% Support 
+                    </div>
+                    <div>
+                        <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='#E5B263' /></svg> 0%-50% Support
+                    </div>
+                    <div>
+                        <svg height='10' width='10'><circle cx='5' cy='5' r='4' stroke='black' stroke-width='1' fill='#7BA0A4' /></svg> 0% Support 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "surveyArea">
+            <div id="surveyDescription">
+                <b>Tell us about your experience with transportation in Westwood!</b>
+            </div>
+            <div id="theSurveyButton">
+                <a href="https://forms.gle/zBeojRzdRVecZ1K16" target="_blank">
+                    <button class = "surveyButton"><b>TAKE THE SURVEY</b></button>
+                </a>
+            </div>
+        </div>
+        <div id="buttonArea">
+            <div class="btn-group">
+                <button id="btnDoNotSupport"> Do not support</button>
+                <button id="btnUndecided"> Undecided</button>
+                <button id="btnSupport"> Support</button>
+            </div>
         </div>
         <div id="footer">
-            Copyright(2023)
+            Copyright(2023) | Developed and Designed by Sage Luong and Dylan Wan
         </div>
         <script src="js/init.js"></script>
+
     </body>
 </html>

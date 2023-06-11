@@ -1,86 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins&display=swap');
 
 *{
-    font-family: "Poppins";
+    font-family: "PT Sans Narrow";
 }
 
 body{
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header" "main_content" "footer";
-    background-color: #D3EFC6;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "intro" "main_content" "survey" "buttons" "footer";
+    background-color: #C8E4C1;
     gap: 20px;
+    color: #002529;
+    letter-spacing: 1px;
 }
 
 header{
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
     grid-area: header;
-    justify-self: center;
-    align-self: center;
 }
+.navbar a {
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+  
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #25662C;
+    color: #fff;
+    justify-content: space-between;
+  }
+  
+.nav-links a {
+    color: #fff;
+}
+  
+ /* LOGO */
+.logo {
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+  
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+  
+.menu li:hover {
+    background-color: #57955e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+  
+.menu li {
+    padding: 10px 20px;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    /* left: 0; */
+    /* top: 0; */
+
+    margin: 5px auto;
+    width: 100%;
+    padding: 10px;
+    /* max-width:100%;  */
+    /* //for responsive purposes. */
+
+    width: 100%;  
+    /* Full width */
+    height: 100%; 
+    /* Full height  */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    /* background-color: #fefefe; */
+    margin: 0% auto; 
+    /* 15% from the top and centered */
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 100%; 
+    /* Could be more or less, depending on screen size */
+    height:100vh;
+  }
+
+#modalSpacer{
+    grid-column: 1;
+    grid-row: 1/span 2;
+    /* background-color: #fefefe; */
+    margin: 0% auto; 
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    /* Could be more or less, depending on screen size */
+    height:100vh;
+}
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  /* The Modal (background) - for pop window */
+
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* turn off overflow */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+  
+  /* Modal Content/Box */
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
 
 #footer{
     grid-area: footer;
+    font-size: 12px;
 }
 
 .main{
     grid-area: main_content;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "main_map content";
+    grid-template-rows: auto auto;
+    grid-template-areas: "intro" "main_map";
     display: grid;
+    background: white;
+    border-style: solid;
+    border-color: #002529;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
 }
 
-#contents{
-    grid-area: content;
-    display: grid;
-    grid-template-rows: 3fr 1fr; 
-    grid-template-areas: "userStories" "survey"
+.introduction{
+    grid-area: intro;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #FFCC7D;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #the_map{
     height:80vh;
-    margin-left: 20px;
     grid-area: main_map;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
 }
 
-#theSurvey{
+#surveyArea{
     grid-area: survey;
     grid-template-areas: "buttonDescription surveyButton";
+    grid-template-columns: 3fr 1fr;
+    margin: 20px;
+    padding: 20px;
+    background: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #002529;
+    border-width: 2px;
 }
 
-#buttonDescription{
+#buttonArea{
+    grid-area: buttons;
+    display: grid;
+}
+
+
+#surveyDescription{
     grid-area: buttonDescription;
-    text-align: right;
-    padding: 20px 0;
-    margin: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 36px;
+    letter-spacing: 2px;
 }
 
 #theSurveyButton{
     grid-area: surveyButton;
-    padding: 20px 0;
-    margin: 20px;
+    align-self: center;
+    justify-self: center;
+
 }
 
 .surveyButton{
-    background-color: #8cda67;
+    background-color: #FBA625;
     text-align: center;
     cursor: pointer;
     padding: 20px 40px;
     font-size: 20px;
     border-radius: 5px;
+    width: 300px;
+    color: #002529;
+    letter-spacing: 2px;
 }
 
 .surveyButton:hover{
-    color: rgb(255, 253, 238);
-    background-color: #50b422;
+    background-color: #DE8705;
     transition: background-color .25s;  
-}
-
-.surveyButton a{
-    text-decoration: none;
-    color: black;
 }
 
 #placeForUserStories{
@@ -98,6 +264,7 @@ header{
     background-color: gray;
     align-self: center;
     padding: 10px;
+    margin-right: 10px;
 }
 
 #placeForUserStoriesShow{
@@ -106,46 +273,44 @@ header{
 }
 
 .userStories{
-    color: black;
-    background: white;
+    color: #002529;
+    background: #dee5e7;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
 }
 
-.legend {
-    border-radius: 5px;
-    padding: 6px 8px;
-    background: white;
-    background: rgba(221, 221, 221, 0.8);
-    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
-    /*border-radius: 5px;*/
-    line-height: 24px;
-    color: #555;
-  }
-  .legend h4 {
-    text-align: center;
-    font-size: 16px;
-    margin: 2px 12px 8px;
-    color: #393939;
-  }
-  
-  .legend span {
+#legend{
+    z-index: 500;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 4;
     position: relative;
-    bottom: 3px;
-  }
-  
-  .legend i {
-    width: 18px;
-    height: 18px;
+}
+
+.btn-group button{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
     float: left;
-    margin: 0 8px 0 0;
-    opacity: 0.7;
-  }
-  
-  .legend i.icon {
-    background-size: 18px;
-    background-color: rgba(255, 255, 255, 1);
-  }
+}
+
+.btn-group button:not(:last-child){
+    border-right: none;
+}
+
+.btn-group:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
