@@ -8,7 +8,7 @@ body{
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header" "intro" "main_content" "survey" "buttons" "footer";
-    background-color: #C8E4C1;
+    background-color: #39703f;
     gap: 20px;
     color: #002529;
     letter-spacing: 1px;
@@ -19,8 +19,9 @@ header{
     margin: 0px;
     grid-area: header;
     border-bottom-style: solid;
-    border-bottom-color: #002529;
+    border-bottom-color: #00252900;
     border-bottom-width: 4px;
+    
 }
 .navbar a {
     text-decoration: none;
@@ -40,6 +41,9 @@ li {
     /* background-color: #25662C; */
     color: #002529;
     justify-content: space-between;
+    background-color: #ffffff49;
+    border-radius: 10px;
+    border-color: #ffffff;
   }
   
 .nav-links a {
@@ -193,8 +197,9 @@ li {
     font-size: 36px;
     padding: 20px;
     margin-bottom: 20px;
-    background: #FFCC7D;
+    background: #df9e3c;
     border-radius: 10px 10px 0px 0px;
+    color :rgb(255, 255, 255)
 }
 
 #the_map{
