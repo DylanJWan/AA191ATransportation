@@ -51,6 +51,7 @@ On the top left of our website, we have the name of our project, Westwood Connec
 Hovering over a zipcode displays what zipcode a user is hovering over.
 ![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/82902f7b-58b8-498b-8ca8-57f66261d1ba)
 Clicking on a zipcode displays the community's transportation stories associated with that zip code in the sidebar. This is an example of a story that shows when clicking on the zipcode 90024. We can see their main connection to Westwood, whether they have experienced any transportation-related issues in Westwood Village, whether they support sustainable transportation installments and their reasoning, and if they have any other thoughts about sustainable transportation.
+
 ![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/f5988e4d-a7bc-4bfb-898c-1ae88f0c0506)
 
 ## 👥 Acknowledgements ##
