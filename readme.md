@@ -3,14 +3,14 @@
 The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/index.html).
 
 ## Table of Contents ##
-* [Background](#-background-)
-* [Objectives](#-objectives-)
-* [Empowered Community](#-empowered-community-)
-* [Technology Used](#-technology-used-)
-* [Future Repurposing](#-future-repurposing-)
-* [Web Features and Screenshots](#-web-features-and-screenshots-)
+* 📖[Background](#-background-)
+* 📌[Objectives](#-objectives-)
+* 🙌[Empowered Community](#-empowered-community-)
+* 💻[Technology Used](#-technology-used-)
+* 💡[Future Repurposing](#-future-repurposing-)
+* 🗺️[Web Features and Screenshots](#-web-features-and-screenshots-)
 
-## 🌐 Background <a name="background"></a> ##
+## 📖 Background <a name="background"></a> ##
 Westwood is a critical neighborhood in Los Angeles for UCLA students, business owners, and commuters. However, transportation organizations such as Streets for All have highlighted how the current infrastructure neglects the safety of those who do not own cars and offers them few comfortable alternatives. Even the supposedly walkable, student-friendly Westwood Village is suffering from the current car-optimized setup with a 32% business vacancy rate[^1]. Even worse, 4 of its main streets are all on the City of LA’s High Injury Network[^1]. To help shift the weight off of car dependency, UCLA Transportation has offered subsidized public transit passes for services such as Metro and the Big Blue Bus in the Westwood area. However, there has not been a substantial increase in students and employees using public transit in 2021[^2]. It is evident that car-alternative incentives do not change the core issue - the current infrastructure has made any other form of transportation besides driving inconvenient, uncomfortable, and dangerous.
 [^1]: “Westwood Connected.” Westwood Connected, https://www.westwoodconnected.com/. Accessed 27 April 2023.
 [^2]: “UCLA State of the Commute 2021.” ArcGIS StoryMaps, Esri, 26 Apr 2022, https://storymaps.arcgis.com/stories/b5f9d4cc81fe4f15b7bafa75b1f73adf. Accessed 3 May 2023.
@@ -26,11 +26,11 @@ The communities we hope to empower through our project include those who live in
 - **Google Sheets** is used to store the survey data collected from the Google Form, using the Geocoding API from Google to geocode the zipcodes of respondents' residences and/or businesses with latitude and longitude values.
 - **HTML/CSS** are both used to create the base layout of the entire website and most of its styling and formatting. They also allow users to navigate from one web page to another.
 - **Javascript** is used to display the community stories and associate them with a hoverable zip code on the web map, geocode the zip code bounds for those with responses, make edits to the Leaflet map that best fit our project goals, and create the interactive sidebar which displays the zip code overview and community stories.
-- **Leaflet** is used to create an interactive map which displays the information collected from the Google Form by associating it with the latitude and longitude values of its associated zip code.
+- **[Leaflet](https://leafletjs.com/) and [turf.js](https://turfjs.org/)** are used to create an interactive map which displays the information collected from the Google Form by associating it with the latitude and longitude values of its associated zip code.
 - **Other Libraries** were used to add functionality to our website. **Papaparse** was used to fetch our Google Sheets data and integrate it into our site. **[leaflet-v2-sidebar](https://github.com/Turbo87/sidebar-v2/tree/master)** is used to implement the side bar that displays community stories.
 - **GeoJSON** from Albert Kochaphum is used for zipcode polygons in California. The data can be found [here](https://github.com/albertkun/leaflet-turfjs-spatial-join).
 
-## ❓ Future Repurposing <a name="future"></a> ##
+## 💡 Future Repurposing <a name="future"></a> ##
 
 The impact of our project aims to provide future transportation advocates such as Westwood Connected with the personal experiences of various groups in the Westwood community. As a result, these organizations can better understand the unique perspectives and stories of students, business owners, and visitors as they begin to identify and address transportation issues. Since our final deliverables will include a map of businesses and community members supporting our initiative along with discussions and anecdotes, transportation organizations can access more publicly available information regarding the real needs of Westwood enthusiasts. By mapping the diverse geographic locations of residencies and businesses, advocates can better showcase how any improvements to Westwood’s transportation architecture would result in far-reaching benefits for those who live both near and far from the Westwood area.
 
