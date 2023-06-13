@@ -8,7 +8,7 @@ body{
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header" "intro" "main_content" "survey" "buttons" "footer";
-    background-color: #C8E4C1;
+    background-color: #bddfc1;
     gap: 20px;
     color: #002529;
     letter-spacing: 1px;
@@ -16,11 +16,12 @@ body{
 
 header{
     padding: 0px;
-    margin: 0px;
+    margin: 10px 75px 0px 75px;
     grid-area: header;
     border-bottom-style: solid;
-    border-bottom-color: #002529;
+    border-bottom-color: #00252900;
     border-bottom-width: 4px;
+    
 }
 .navbar a {
     text-decoration: none;
@@ -38,12 +39,18 @@ li {
     align-items: center;
     padding: 15px 20px;
     /* background-color: #25662C; */
-    color: #002529;
+    color: white;
     justify-content: space-between;
+    background-color: #4d694f;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #002529;
+    border-width: 3px;
+    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.60);
   }
   
 .nav-links a {
-    color: #002529;
+    color: white;
 }
   
  /* LOGO */
@@ -61,7 +68,7 @@ li {
 }
   
 .menu li:hover {
-    background-color: #49AD2D;
+    background-color: #7c987e;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -165,17 +172,19 @@ li {
     grid-area: footer;
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #25662C;
-    border-top-style: solid;
-    border-top-color: #002529;;
-    border-top-width: 3px;
-    color: white
+    margin: 0px 75px 0px 75px;
+    background-color: #4d694f;
+    border-style: solid;
+    border-color: #002529;;
+    border-width: 3px 3px 0px 3px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .main{
     grid-area: main_content;
-    grid-template-rows: auto auto;
-    grid-template-areas: "intro" "main_map";
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "intro" "main_map" "team";
     display: grid;
     background: white;
     border-style: solid;
@@ -183,8 +192,8 @@ li {
     border-radius: 10px;
     border-width: 2px;
     padding: 20px;
-    margin: 0px 20px 0px 20px;
-    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.75);
+    margin: 0px 75px 0px 75px;
+    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.60);
 }
 
 .introduction{
@@ -193,8 +202,9 @@ li {
     font-size: 36px;
     padding: 20px;
     margin-bottom: 20px;
-    background: #FFCC7D;
+    background: #df9e3c;
     border-radius: 10px 10px 0px 0px;
+    color :#002529;
 }
 
 #the_map{
@@ -207,11 +217,61 @@ li {
     justify-items: center;
 }
 
+#teamArea{
+    grid-area: team;
+    grid-template-areas: "aboutSage aboutDylan";
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    display: grid;
+}
+
+#sageBio{
+    grid-area: aboutSage;
+    grid-template-areas: "sagePicture" "sageDescription";
+    grid-template-rows: auto auto;
+    padding-right: 20px;
+    align-items: start;
+    display: grid;
+}
+
+#sagePic{
+    grid-area: sagePicture;
+    align-items: center;
+    display: grid;
+}
+
+#sageDesc{
+    grid-area: sageDescription;
+    text-align: left;
+    display: grid;
+}
+
+#dylanBio{
+    grid-area: aboutDylan;
+    grid-template-areas: "dylanPicture" "dylanDescription";
+    grid-template-rows: auto auto;
+    padding-left: 20px;
+    align-items: start;
+    display: grid;
+}
+
+#dylanPic{
+    grid-area: dylanPicture;
+    align-items: center;
+    display: grid;
+}
+
+#dylanDesc{
+    grid-area: dylanDescription;
+    text-align: left;
+    display: grid;
+}
+
 #surveyArea{
     grid-area: survey;
     grid-template-areas: "buttonDescription surveyButton";
     grid-template-columns: 3fr 1fr;
-    margin: 20px;
+    margin: 20px 75px;
     padding: 20px;
     background: white;
     display: grid;
@@ -219,7 +279,7 @@ li {
     border-style: solid;
     border-color: #002529;
     border-width: 2px;
-    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.75);
+    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.60);
 }
 
 #buttonArea{
@@ -233,7 +293,7 @@ li {
     align-items: center;
     text-align: center;
     padding: 20px 40px;
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 2px;
 }
 
@@ -246,7 +306,6 @@ li {
 
 .surveyButton{
     background-color: #FBA625;
-    background-image: linear-gradient(to top right, #d58d1f, #FBA625);
     text-align: center;
     cursor: pointer;
     padding: 20px 40px;
@@ -326,4 +385,3 @@ li {
     clear: both;
     display: table;
 }
-

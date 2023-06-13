@@ -4,7 +4,7 @@ let boundary; // place holder for the data
 let collected; // variable for turf.js collected points 
 let allPoints = []; // array for all the data points
 
-let mapOptions = {'center': [34.0631451,-118.4367551],'zoom':10, geojsonWidth:.2}
+let mapOptions = {'center': [34.0631451,-118.4367551],'zoom':11, geojsonWidth:.2}
 
 let highSupport = L.featureGroup();
 let mediumSupport = L.featureGroup();
@@ -69,16 +69,7 @@ let panelContent = {
     position: 'top'                  // optional vertical alignment, defaults to 'top'
 };
 
-let panelContent2 = {
-    id: 'info',                     // UID, used to access the panel
-    tab: '<i class="fa fa-question"></i>',  // content can be passed as HTML string,
-    pane: 'hello there!',        // DOM elements can be passed, too
-    title: 'Reading The Testimonies',              // an optional pane header
-    position: 'top'                  // optional vertical alignment, defaults to 'top'
-};
-
 sidebar.addPanel(panelContent);
-sidebar.addPanel(panelContent2);
 
 function getSupportColor(inputPercentage) {
     return inputPercentage > 0.75 ? '#C57601' : 
@@ -275,9 +266,18 @@ function populatePanel(zipcode){
         const panelContent = document.getElementById("stories")
         panelContent.innerHTML = `<div><center><h1 style="font-size:24px;">Thoughts on Sustainable Transportation: Overview</h1></center></div>
         <div style="font-size:14px;"><center>We asked Westwood community members whether they would support sustainable transportation installments in Westwood Village. We'll highlight the five zipcodes with the highest proportion of support responses below! </center></div>
-        <div><canvas id="myChart" style="width:100%;max-width:700px"></canvas></div>
+        <br>
+        <div style="font-size:14px;">1. <b>90063</b>: 100% Support</div>
+        <div style="font-size:14px;">2. <b>91739</b>: 100% Support</div>
+        <div style="font-size:14px;">3. <b>90024</b>: 73% Support </div>
+        <div style="font-size:14px;">4. <b>90020</b>: 50% Support</div>
+        <div style="font-size:14px;">5. <b>90042</b>: 0% Support</div>
         `
-        //sortTopFiveSupport()
+        // <div style="font-size:14px;">1. ${sortedSupport[4,0]}: ${sortedSupport[4,1]}</div>
+        // <div style="font-size:14px;">2. ${sortedSupport[3,0]}: ${sortedSupport[3,1]}</div>
+        // <div style="font-size:14px;">3. ${sortedSupport[2,0]}: ${sortedSupport[2,1]}</div>
+        // <div style="font-size:14px;">4. ${sortedSupport[1,0]}: ${sortedSupport[1,1]}</div>
+        // <div style="font-size:14px;">5. ${sortedSupport[0,0]}: ${sortedSupport[0,1]}</div>
     }
     else{
         const panelContent = document.getElementById("stories")
@@ -302,7 +302,6 @@ function processData(results){
     getBoundary(boundaryLayer)
     populatePanel(undefined)
     sidebar.open("stories")
-
 }
 
 
@@ -353,7 +352,7 @@ function getBoundary(layer){
 
 loadData(dataUrl)
 
-let sortedSupport = [];
+let sortedSupport = new Array();
 
 //function for clicking on polygons
 function onEachFeature(feature, layer) {
@@ -378,15 +377,11 @@ function onEachFeature(feature, layer) {
         console.log(supportCount) // see what the count is on click
         layer.bindPopup(`<center> <h3> Zipcode: ${feature.properties.zcta} </h3></center>`); //bind the pop up to the number
 
-        sortedSupport.push([feature.properties.zcta,supportCount/count])
-        console.log("sortedSupport: ")
-        console.log(sortedSupport)
+        sortedSupport.push(new Array(feature.properties.zcta,supportCount/count))
 
         sortedSupport.sort(function(a, b) {
             return a[1] - b[1];
         });
-        console.log("sortedSupport: ")
-        console.log(sortedSupport)
 
         layer.on('mouseover', function(e){
             this.openPopup();
