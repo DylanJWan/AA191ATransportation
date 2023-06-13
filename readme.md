@@ -39,3 +39,11 @@ When a user first visits our website, there is a popup message with a brief desc
 On the top left of our website, we have the name of our project, Westwood Connected. On the top right, we have a navigation menu that takes the user to 1.) the homepage (Home) which contains the map, community stories, and survey button, 2.) the about page (About) which explains the background info, objectives, empowered community, and long-term impacts of our project, 3.) the team page (Our Team) which explains more about us as the creators of the project, and 4.) a contact button (Contact Us) which redirects the user to their default email application to send us an email. A collapsible sidebar contains an initial overview of the 5 zipcodes which have the highest percent of support for sustainable transportation initiatives. Upon clicking on a zipcode, the sidebar will populate with community stories from that zipcode. Near the bottom of the page is a survey button which will allow Westwood community members to add their experiences to the website by taking our survey.
 ![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/bb766bed-3598-4bd2-a154-f2622d70e083)
 
+### An overview of hovering over a zipcode ###
+Hovering over a zipcode displays what zipcode a user is hovering over.
+![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/82902f7b-58b8-498b-8ca8-57f66261d1ba)
+Clicking on a zipcode displays the community's transportation stories associated with that zipcode in the sidebar. This is an example of a story that shows when clicking on the zipcode 90024. We can see their main connection to Westwood, whether they have experienced any transportation-related issues in Westwood Village, whether they support sustainable transportation installments and their reasoning, and if they have any other thoughts about sustainable transportation.
+![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/f5988e4d-a7bc-4bfb-898c-1ae88f0c0506)
+
+## 👥 Acknowledgements ##
+This project was created for ASIA AM 191A: Web Development and GIS for Social Change: Critical Data for Transforming Civil Society with the guidance and support of Albert Kochaphum. We thank you for helping us make this website a reality!
