@@ -1,6 +1,6 @@
 # Westwood Reimagined
 ### by Sage Luong and Dylan Wan
-The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/team.html).
+The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/index.html).
 
 ## Table of Contents ##
 * [Background](#-background-)
@@ -34,3 +34,8 @@ Our project was built with the intention of distributing our knowledge and data 
 ### An overview of our website ###
 When a user first visits our website, there is a popup message with a brief description of our overall project and its objectives, who we want to empower, how to use the website, and where to find the survey.
 ![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/21a60f52-d7cf-44a8-900e-2a35e68de150)
+
+### An overview of our homepage ###
+On the top left of our website, we have the name of our project, Westwood Connected. On the top right, we have a navigation menu that takes the user to 1.) the homepage (Home) which contains the map, community stories, and survey button, 2.) the about page (About) which explains the background info, objectives, empowered community, and long-term impacts of our project, 3.) the team page (Our Team) which explains more about us as the creators of the project, and 4.) a contact button (Contact Us) which redirects the user to their default email application to send us an email. A collapsible sidebar contains an initial overview of the 5 zipcodes which have the highest percent of support for sustainable transportation initiatives.
+![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/bb766bed-3598-4bd2-a154-f2622d70e083)
+
