@@ -1,14 +1,14 @@
 # Westwood Reimagined
 ### by Sage Luong and Dylan Wan
-The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/index.html).
+We are two UCLA student researchers passionate about advocating for less car-centric infrastructure and more human-centric infrastructure in Westwood Village!The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/index.html).
 
 ## Table of Contents ##
-* 📖[Background](#-background-)
-* 📌[Objectives](#-objectives-)
-* 🙌[Empowered Community](#-empowered-community-)
-* 💻[Technology Used](#-technology-used-)
-* 💡[Future Repurposing](#-future-repurposing-)
-* 🗺️[Web Features and Screenshots](#-web-features-and-screenshots-)
+* 📖 [Background](#-background-)
+* 📌 [Objectives](#-objectives-)
+* 🙌 [Empowered Community](#-empowered-community-)
+* 💻 [Technology Used](#-technology-used-)
+* 💡 [Future Repurposing](#-future-repurposing-)
+* 🗺️ [Web Features and Screenshots](#-web-features-and-screenshots-)
 
 ## 📖 Background <a name="background"></a> ##
 Westwood is a critical neighborhood in Los Angeles for UCLA students, business owners, and commuters. However, transportation organizations such as Streets for All have highlighted how the current infrastructure neglects the safety of those who do not own cars and offers them few comfortable alternatives. Even the supposedly walkable, student-friendly Westwood Village is suffering from the current car-optimized setup with a 32% business vacancy rate[^1]. Even worse, 4 of its main streets are all on the City of LA’s High Injury Network[^1]. To help shift the weight off of car dependency, UCLA Transportation has offered subsidized public transit passes for services such as Metro and the Big Blue Bus in the Westwood area. However, there has not been a substantial increase in students and employees using public transit in 2021[^2]. It is evident that car-alternative incentives do not change the core issue - the current infrastructure has made any other form of transportation besides driving inconvenient, uncomfortable, and dangerous.
