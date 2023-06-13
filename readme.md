@@ -21,6 +21,6 @@ The communities we hope to empower through our project include those who live in
 ## 💻 Technology Used <a name="technology"></a> ##
 Westwood Reimagined was created using HTML as the base for the website, Javascript for interactivity and data integration, as well as CSS for styling. Leaflet, a Javascript library, was used to create the interactive map. Google Forms was used to create our survey, while Google Sheets was used to collect and organize the survey data. Custom geocode was then added to Google Sheets App Script to populate location data. Papa Parse, a CSV Parser for Javascript was used to fetch our Google Sheets data and integrate it into our site. Finally, we used the [v2-sidebar](https://github.com/Turbo87/sidebar-v2/tree/master) plugin to display Westwood community members' transportation stories.
 
-## Future Repurposing <a name="future"></a> ##
+## ❓ Future Repurposing <a name="future"></a> ##
 
 Others could utilize this technology to create interactive maps, collect survey data, and create a site that marries the two like we did. 
