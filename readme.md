@@ -1,6 +1,6 @@
 # Westwood Reimagined
 ### by Sage Luong and Dylan Wan
-The live demo can be found[here]().
+The live demo can be found [here]().
 
 ## Table of Contents ##
 * [Background] (#background)
@@ -19,4 +19,8 @@ The objective project is to advocate for non-motorized transportation by partner
 The communities we hope to empower through our project include those who live in Westwood, those who work in Westwood, and those who drive into Westwood. These consist of UCLA students, business owners, business employees, business patrons, and campus visitors to name a few. We also hope to empower the often-overlooked voices in the car-dependent infrastructure discussion, specifically students and those who take alternative forms of transportation. This is especially important since most of these groups don’t own a car, which increases their risk of being victims of car-related accidents and discomfort. To reach out to UCLA students and frequent visitors, we will be distributing our online survey through popular messaging platforms such as GroupMe and Discord. For business owners and employees, we will visit the businesses in-person to distribute after receiving their contact information.
 
 ## 💻 Technology Used <a name="technology"></a> ##
-Westwood Reimagined was created using HTML as the base for the website, Javascript for interactivity and data integration, as well as CSS for styling. Leaflet, a Javascript library, was used to create the interactive map. Google Forms was used to create our survey, while Google Sheets was used to collect and organize the survey data. Custom geocode was then added to Google Sheets App Script to populate location data. Papa Parse, a CSV Parser for Javascript was used to fetch our Google Sheets data and integrate it into our site. Finally, we used the v2-sidebar plugin to display Westwood community members' transportation stories. Others could utilize this technology to create interactive maps, collect survey data, and create a site that marries the two like we did. 
+Westwood Reimagined was created using HTML as the base for the website, Javascript for interactivity and data integration, as well as CSS for styling. Leaflet, a Javascript library, was used to create the interactive map. Google Forms was used to create our survey, while Google Sheets was used to collect and organize the survey data. Custom geocode was then added to Google Sheets App Script to populate location data. Papa Parse, a CSV Parser for Javascript was used to fetch our Google Sheets data and integrate it into our site. Finally, we used the [v2-sidebar](https://github.com/Turbo87/sidebar-v2/tree/master) plugin to display Westwood community members' transportation stories.
+
+## Future Repurposing <a name="future"></a> ##
+
+Others could utilize this technology to create interactive maps, collect survey data, and create a site that marries the two like we did. 
