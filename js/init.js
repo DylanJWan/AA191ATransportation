@@ -179,7 +179,7 @@ function addZipcodeStory(values, zipcode){
         const newStory = document.createElement("story")
         newStory.innerHTML += `
         <div class="userStories">
-        <h3>Transportation Issues</h3>${value.transpoIssues} <h3>Support</h3> ${value.support}  <h3>Support Reasoning</h3> ${value.supportReason} <h3>Other Thoughts</h3> ${thoughtsData}
+        <h3>Main Connection to Westwood</h3>${value.business}<h3>Transportation Issues</h3>${value.transpoIssues} <h3>Sustainable Transportation Support</h3> ${value.support}  <h3>Support Reasoning</h3> ${value.supportReason} <h3>Other Thoughts</h3> ${thoughtsData}
         </div>
         `
         thisStoryDiv.appendChild(newStory)
@@ -254,11 +254,29 @@ function filterSurveyDataByZipcode(data){
     }
 }
 
+let xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+let yValues = [55, 49, 44, 24, 15];
+let barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+    options: {}
+});
+
 function populatePanel(zipcode){
     if(zipcode == undefined){
         const panelContent = document.getElementById("stories")
         panelContent.innerHTML = `<div><center><h1 style="font-size:24px;">Thoughts on Sustainable Transportation: Overview</h1></center></div>
-        <div style="font-size:14px;"><center>We asked Westwood community members whether they would support sustainable transportation installments in Westwood Village. We'll highlight the five zipcodes with the highest proportion of support responses below! </center></div>`
+        <div style="font-size:14px;"><center>We asked Westwood community members whether they would support sustainable transportation installments in Westwood Village. We'll highlight the five zipcodes with the highest proportion of support responses below! </center></div>
+        <div><canvas id="myChart" style="width:100%;max-width:700px"></canvas></div>
+        `
         //sortTopFiveSupport()
     }
     else{
@@ -335,6 +353,8 @@ function getBoundary(layer){
 
 loadData(dataUrl)
 
+let sortedSupport = [];
+
 //function for clicking on polygons
 function onEachFeature(feature, layer) {
     if (feature.properties.values.length > 0) {
@@ -357,6 +377,17 @@ function onEachFeature(feature, layer) {
         })
         console.log(supportCount) // see what the count is on click
         layer.bindPopup(`<center> <h3> Zipcode: ${feature.properties.zcta} </h3></center>`); //bind the pop up to the number
+
+        sortedSupport.push([feature.properties.zcta,supportCount/count])
+        console.log("sortedSupport: ")
+        console.log(sortedSupport)
+
+        sortedSupport.sort(function(a, b) {
+            return a[1] - b[1];
+        });
+        console.log("sortedSupport: ")
+        console.log(sortedSupport)
+
         layer.on('mouseover', function(e){
             this.openPopup();
             // anything else you want to happen on hover of the zipcodes

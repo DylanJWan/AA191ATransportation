@@ -18,6 +18,9 @@ header{
     padding: 0px;
     margin: 0px;
     grid-area: header;
+    border-bottom-style: solid;
+    border-bottom-color: #002529;
+    border-bottom-width: 4px;
 }
 .navbar a {
     text-decoration: none;
@@ -34,19 +37,20 @@ li {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    background-color: #25662C;
-    color: #fff;
+    /* background-color: #25662C; */
+    color: #002529;
     justify-content: space-between;
   }
   
 .nav-links a {
-    color: #fff;
+    color: #002529;
 }
   
  /* LOGO */
 .logo {
     font-size: 48px;
     letter-spacing: 4px;
+    margin-left: 20px;
 }
   
 /* NAVBAR MENU */
@@ -57,7 +61,7 @@ li {
 }
   
 .menu li:hover {
-    background-color: #57955e;
+    background-color: #49AD2D;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -159,7 +163,13 @@ li {
 
 #footer{
     grid-area: footer;
-    font-size: 12px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #25662C;
+    border-top-style: solid;
+    border-top-color: #002529;;
+    border-top-width: 3px;
+    color: white
 }
 
 .main{
@@ -174,6 +184,7 @@ li {
     border-width: 2px;
     padding: 20px;
     margin: 0px 20px 0px 20px;
+    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.75);
 }
 
 .introduction{
@@ -208,6 +219,7 @@ li {
     border-style: solid;
     border-color: #002529;
     border-width: 2px;
+    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.75);
 }
 
 #buttonArea{
@@ -234,6 +246,7 @@ li {
 
 .surveyButton{
     background-color: #FBA625;
+    background-image: linear-gradient(to top right, #d58d1f, #FBA625);
     text-align: center;
     cursor: pointer;
     padding: 20px 40px;
