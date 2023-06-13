@@ -19,9 +19,8 @@ header{
     margin: 10px 75px 0px 75px;
     grid-area: header;
     border-bottom-style: solid;
-    border-bottom-color: #00252900;
+    border-bottom-color: #002529;
     border-bottom-width: 4px;
-    
 }
 .navbar a {
     text-decoration: none;
@@ -41,12 +40,6 @@ li {
     /* background-color: #25662C; */
     color: white;
     justify-content: space-between;
-    background-color: #4d694f;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #002529;
-    border-width: 3px;
-    box-shadow: 5px 5px 5px rgba(10, 25, 27, 0.60);
   }
   
 .nav-links a {
@@ -204,7 +197,6 @@ li {
     margin-bottom: 20px;
     background: #df9e3c;
     border-radius: 10px 10px 0px 0px;
-    color :#002529;
 }
 
 #the_map{
