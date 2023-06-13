@@ -3,7 +3,7 @@
 The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/team.html).
 
 ## Table of Contents ##
-* [Background] [#-background-]
+* [Background] (https://github.com/DylanJWan/AA191ATransportation/blob/main/readme.md#-background-)
 * [Objectives] (#-objectives-)
 * [Empowered Community] (#-empowered-community-)
 * [Technology Used] (#-technology-used-)
