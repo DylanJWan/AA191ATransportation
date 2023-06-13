@@ -8,6 +8,7 @@ The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportati
 * [Empowered Community](#-empowered-community-)
 * [Technology Used](#-technology-used-)
 * [Future Repurposing](#-future-repurposing-)
+* [Web Features and Screenshots](#-screenshots-)
 
 ## 🌐 Background <a name="background"></a> ##
 Westwood is a critical neighborhood in Los Angeles for UCLA students, business owners, and commuters. However, transportation organizations such as Streets for All have highlighted how the current infrastructure neglects the safety of those who do not own cars and offers them few comfortable alternatives. Even the supposedly walkable, student-friendly Westwood Village is suffering from the current car-optimized setup with a 32% business vacancy rate. Even worse, 4 of its main streets are all on the City of LA’s High Injury Network. To help shift the weight off of car dependency, UCLA Transportation has offered subsidized public transit passes for services such as Metro and the Big Blue Bus in the Westwood area. However, there has not been a substantial increase in students and employees using public transit in 2021. It is evident that car-alternative incentives do not change the core issue - the current infrastructure has made any other form of transportation besides driving inconvenient, uncomfortable, and dangerous.
@@ -28,3 +29,8 @@ The impact of our project aims to provide future transportation advocates such a
 We hope that our website can continue to empower Westwood community members for years to come by continuing to collect stories as the transportation environment in Westwood Village as it grows and develops. We would love for community members to continue visiting our website as it updates with stories from new members, which will provide a communal history of how people view the traffic infrastructure in the area. We also hope to iterate over our website in the future by adding better functionality to better showcase the stories of community members as well as to improve our website in order to increase user satisfaction.
 
 Our project was built with the intention of distributing our knowledge and data freely, so our survey and survey data is made publicly available to anyone with a Google account. Creators can use any and all snippets of code for their own purposes will incur no financial cost. This way, innovators who want to make a project similar or different than ours can have a basis to aid in their developmental process. Organizations, such as Westwood Connected, that are interested in repurposing our project to fit their needs will also incur no financial cost. We hope that any projects that are derived from this one remain open source and visible to the public to continue the free distribution of knowledge.
+
+## 🗺️ Web Features and Screenshots <a name="screenshots"></a> ##
+### An overview of our website ###
+When a user first visits our website, there is a popup message with a brief description of our overall project and its objectives, who we want to empower, how to use the website, and where to find the survey.
+![image](https://github.com/DylanJWan/AA191ATransportation/assets/83676556/21a60f52-d7cf-44a8-900e-2a35e68de150)
