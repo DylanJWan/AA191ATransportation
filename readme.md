@@ -3,11 +3,11 @@
 The live demo can be found [here](https://dylanjwan.github.io/AA191ATransportation/team.html).
 
 ## Table of Contents ##
-* [Background](https://github.com/DylanJWan/AA191ATransportation/blob/main/readme.md#-background-)
-* [Objectives] (#-objectives-)
-* [Empowered Community] (#-empowered-community-)
-* [Technology Used] (#-technology-used-)
-* [Future Repurposing] (#-future-repurposing-)
+* [Background](#-background-)
+* [Objectives](#-objectives-)
+* [Empowered Community](#-empowered-community-)
+* [Technology Used](#-technology-used-)
+* [Future Repurposing](#-future-repurposing-)
 
 ## 🌐 Background <a name="background"></a> ##
 Westwood is a critical neighborhood in Los Angeles for UCLA students, business owners, and commuters. However, transportation organizations such as Streets for All have highlighted how the current infrastructure neglects the safety of those who do not own cars and offers them few comfortable alternatives. Even the supposedly walkable, student-friendly Westwood Village is suffering from the current car-optimized setup with a 32% business vacancy rate. Even worse, 4 of its main streets are all on the City of LA’s High Injury Network. To help shift the weight off of car dependency, UCLA Transportation has offered subsidized public transit passes for services such as Metro and the Big Blue Bus in the Westwood area. However, there has not been a substantial increase in students and employees using public transit in 2021. It is evident that car-alternative incentives do not change the core issue - the current infrastructure has made any other form of transportation besides driving inconvenient, uncomfortable, and dangerous.
