@@ -18,9 +18,10 @@ header{
     padding: 0px;
     margin: 10px 75px 0px 75px;
     grid-area: header;
-    border-bottom-style: solid;
-    border-bottom-color: #002529;
-    border-bottom-width: 4px;
+    border-style: solid;
+    border-color: #002529;
+    border-width: 3px;
+    border-radius: 10px;
 }
 .navbar a {
     text-decoration: none;
@@ -37,9 +38,10 @@ li {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    /* background-color: #25662C; */
+    background-color: #4d694f;
     color: white;
     justify-content: space-between;
+    border-radius: 7px;
   }
   
 .nav-links a {
